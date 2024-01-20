@@ -31,12 +31,10 @@ headers = {
 # Make the API request
 response = requests.post(url, headers=headers, json=payload)
 
-# Parse and print the full API response
+# Parse and print only the response content
 result = response.json()
-print(result)
-
-# Check if 'choices' is present in the response
 if 'choices' in result:
-    print(result['choices'][0]['message']['content'])
+    response_content = result['choices'][0]['message']['content']
+    print(response_content)
 else:
     print("Unexpected response format. Please check the API response structure.")

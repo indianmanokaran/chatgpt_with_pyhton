@@ -2,7 +2,7 @@ import openai
 import requests
 
 # Set your OpenAI GPT-3 API key
-api_key = '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'  # Replace this with your actual API key
+api_key = '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'  # Replace this with your actual API key
 
 # Set the endpoint URL for the ChatGPT API
 url = 'https://api.openai.com/v1/chat/completions'
